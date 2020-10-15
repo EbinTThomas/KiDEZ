@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header{
+    width: 100vw;
+    height: 60px;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    border-bottom: 1px solid #d4d4d4;
+}
+#header{
+    left: 75px;
+    position: fixed;
+    width: 95vw;
+    height: 60px;
+    background-color: white;
+    float: right;
+    z-index: 2;
+}
+.searchbox{
+    position: fixed;
+    top: 12px;
+    left: 350px;
+    width: 640px;
+    height: 32px;
+    background-color: black;
+    margin: auto;
+}
+#header input{
+    float: left;
+    height: 32px;
+    width: 580px;
+    position: relative;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#header input:focus{
+    outline: none;
+}
+#header button .fas{
+    color: rgb(128, 128, 128);
+    font-size: small;
+    padding: 10px;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+}
+#header button{
+    height: 32px;
+    width: 60px;
+    position: relative;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    border-left: 0px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    cursor: pointer;
+}
+#header button:focus{
+    outline: none;
+}
+#header button:hover{
+    filter: brightness(98%);
+}
+#header img{
+    position: relative;
+    height: 55px;
+}
+#sidenavbtn{
+    position: fixed;
+    width: 75px;
+    height: 60px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 3;
+}
+.btn{
+    width: 18px;
+    height: 2px;
+    background-color: rgb(90, 89, 89);
+    position: relative;
+    margin-bottom: 3px;
+    top: 22px;
+    left: 25px;
+}
+#sidenav{
+    font-family: 'Ubuntu', sans-serif;
+    top: 60px;
+    position: fixed;
+    overflow: hidden;
+    height: 91vh;
+    width: 0px;
+    background-color: white;
+    position: fixed;
+    color: black;
+    transition: .3s ease;
+    z-index: 3;
+}
+#sidenav a{
+    text-decoration: none;
+    color: black;
+}
+#section #name{
+    height: 50px;
+    background-color: white;
+    width: 370px;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+    padding-left: 10px;
+    padding-top: 20px;
+    position: relative;
+}
+section{
+    width: 380px;
+}
+#section #mainsubvideo .subdescription{
+    background-color: rgba(241, 241, 241, 0.87);
+}
+#section{
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(238, 238, 238);
+    height: 91vh;
+    top: 60px;
+    display: grid;
+    grid-template-columns: 935px auto;
+}
+#section .mainvideo video{
+    width: 932px;
+    height: 524px;
+    position: relative;
+}
+video:focus{
+    outline: none;
+}
+#section .subvideo{
+    height: 67px;
+    display: grid;
+    background-color: white;
+    margin: 10px;
+}
+#section .subvideo img{
+    width: 120px;
+    height: 67.5px;
+    grid-area: img;
+    background-color: rgba(255, 166, 0, 0.747);
+}
+#section .subvideo .subdescription{
+    padding-left: 10px;
+    position: relative;
+    bottom: 67.5;
+    left: 120px;
+    width: auto;
+    height: 67.5px;
+    font-size: 12px;
+    background-color: white;
+}
+.maindescription{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 45px;
+}
+#section a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#section #sub{
+    width: 380px;
+    height: 474px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #d4d4d4;
+    border-top: none;
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+}
+.fa,.fas{
+    width: 30px;
+    height: 30px;
+    padding: 25px;
+    color: rgb(90, 89, 89);
+    font-size: larger;
+}
+li{
+    list-style: none;
+}
+li div{
+    height: 70px;;
+    width: 250px;
+    position: relative;
+    right: 40px;
+}
+li #active{
+    color: rgb(7, 7, 126);
+}
+li div:hover{
+    background-color: #ececec;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 10px;
+} 
+  /* Track */
+::-webkit-scrollbar-track {
+    background: white; 
+} 
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+} 
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
